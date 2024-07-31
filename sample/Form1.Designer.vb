@@ -22,10 +22,43 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "Form1"
+        CheckBox1 = New CheckBox()
+        Button1 = New Button()
+        SuspendLayout()
+        ' 
+        ' CheckBox1
+        ' 
+        CheckBox1.AutoSize = True
+        CheckBox1.Location = New Point(148, 136)
+        CheckBox1.Name = "CheckBox1"
+        CheckBox1.Size = New Size(85, 19)
+        CheckBox1.TabIndex = 0
+        CheckBox1.Text = "CheckBox1"
+        CheckBox1.UseVisualStyleBackColor = True
+        ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(159, 191)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(75, 23)
+        Button1.TabIndex = 1
+        Button1.Text = "DSADSAF"
+        Button1.UseVisualStyleBackColor = True
+        ' 
+        ' Form1
+        ' 
+        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(621, 450)
+        Controls.Add(Button1)
+        Controls.Add(CheckBox1)
+        Name = "Form1"
+        Text = "Form1"
+        ResumeLayout(False)
+        PerformLayout()
     End Sub
+
+    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents Button1 As Button
 
 End Class
