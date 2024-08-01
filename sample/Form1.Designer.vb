@@ -22,43 +22,104 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        CheckBox1 = New CheckBox()
-        Button1 = New Button()
+        components = New ComponentModel.Container()
+        gtxt_username = New TextBox()
+        gtxt_password = New TextBox()
+        Label1 = New Label()
+        password = New Label()
+        gbtn_login = New Button()
+        check_pass = New CheckBox()
+        errorUsername = New ErrorProvider(components)
+        errorPassword = New ErrorProvider(components)
+        CType(errorUsername, ComponentModel.ISupportInitialize).BeginInit()
+        CType(errorPassword, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
-        ' CheckBox1
+        ' gtxt_username
         ' 
-        CheckBox1.AutoSize = True
-        CheckBox1.Location = New Point(148, 136)
-        CheckBox1.Name = "CheckBox1"
-        CheckBox1.Size = New Size(85, 19)
-        CheckBox1.TabIndex = 0
-        CheckBox1.Text = "CheckBox1"
-        CheckBox1.UseVisualStyleBackColor = True
+        gtxt_username.Location = New Point(359, 191)
+        gtxt_username.Name = "gtxt_username"
+        gtxt_username.Size = New Size(100, 23)
+        gtxt_username.TabIndex = 2
         ' 
-        ' Button1
+        ' gtxt_password
         ' 
-        Button1.Location = New Point(159, 191)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(75, 23)
-        Button1.TabIndex = 1
-        Button1.Text = "DSADSAF"
-        Button1.UseVisualStyleBackColor = True
+        gtxt_password.Location = New Point(359, 232)
+        gtxt_password.Name = "gtxt_password"
+        gtxt_password.Size = New Size(100, 23)
+        gtxt_password.TabIndex = 3
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Location = New Point(290, 199)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(59, 15)
+        Label1.TabIndex = 4
+        Label1.Text = "username"
+        ' 
+        ' password
+        ' 
+        password.AutoSize = True
+        password.Location = New Point(290, 240)
+        password.Name = "password"
+        password.Size = New Size(57, 15)
+        password.TabIndex = 5
+        password.Text = "password"
+        ' 
+        ' gbtn_login
+        ' 
+        gbtn_login.Location = New Point(368, 282)
+        gbtn_login.Name = "gbtn_login"
+        gbtn_login.Size = New Size(75, 23)
+        gbtn_login.TabIndex = 6
+        gbtn_login.Text = "gbtn_login"
+        gbtn_login.UseVisualStyleBackColor = True
+        ' 
+        ' check_pass
+        ' 
+        check_pass.AutoSize = True
+        check_pass.Location = New Point(477, 239)
+        check_pass.Name = "check_pass"
+        check_pass.Size = New Size(85, 19)
+        check_pass.TabIndex = 7
+        check_pass.Text = "check_pass"
+        check_pass.UseVisualStyleBackColor = True
+        ' 
+        ' errorUsername
+        ' 
+        errorUsername.ContainerControl = Me
+        ' 
+        ' errorPassword
+        ' 
+        errorPassword.ContainerControl = Me
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(621, 450)
-        Controls.Add(Button1)
-        Controls.Add(CheckBox1)
+        ClientSize = New Size(860, 450)
+        Controls.Add(check_pass)
+        Controls.Add(gbtn_login)
+        Controls.Add(password)
+        Controls.Add(Label1)
+        Controls.Add(gtxt_password)
+        Controls.Add(gtxt_username)
         Name = "Form1"
         Text = "Form1"
+        CType(errorUsername, ComponentModel.ISupportInitialize).EndInit()
+        CType(errorPassword, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
-    Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents gtxt_username As TextBox
+    Friend WithEvents gtxt_password As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents password As Label
+    Friend WithEvents gbtn_login As Button
+    Friend WithEvents check_pass As CheckBox
+    Friend WithEvents errorUsername As ErrorProvider
+    Friend WithEvents errorPassword As ErrorProvider
 
 End Class
